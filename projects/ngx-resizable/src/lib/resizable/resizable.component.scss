@@ -7,7 +7,7 @@ $spacing: 8px;
 	display: flex;
   flex-flow: column nowrap;
 }
-.row {
+.resizable-row {
 	flex: 1;
 	display: flex;
 	flex-flow: row nowrap;
@@ -51,7 +51,7 @@ $spacing: 8px;
       position: absolute;
       box-sizing: border-box;
       display: block;
-      border: 1px solid #ccc;    
+      border: 1px solid #ccc;
   }
 }
 .rg-right, .rg-left {
@@ -106,7 +106,7 @@ $spacing: 8px;
  */
 .content.cols {
     flex-flow: row nowrap;
-  .row {
+  .resizable-row {
     flex-flow: column nowrap;
   }
   .cell {
@@ -123,5 +123,5 @@ $spacing: 8px;
   }
   .rg-left    {
     margin-left: -#{$spacing/2};
-  }  
+  }
 }
