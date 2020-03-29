@@ -4,18 +4,18 @@
 /*!***********************************************************************************!*\
   !*** ./node_modules/@3dgenomes/ngx-resizable/fesm2015/3dgenomes-ngx-resizable.js ***!
   \***********************************************************************************/
-/*! exports provided: NgxResizableService, ResizableComponent, NgxResizableModule, ɵb, ɵa */
+/*! exports provided: NgxResizableModule, NgxResizableService, ResizableComponent, ɵa, ɵb */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NgxResizableModule", function() { return NgxResizableModule; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NgxResizableService", function() { return NgxResizableService; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ResizableComponent", function() { return ResizableComponent; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NgxResizableModule", function() { return NgxResizableModule; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ɵb", function() { return DragDirective; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ɵa", function() { return NgxResizeableWindowRef; });
-/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/common */ "./node_modules/@angular/common/fesm2015/common.js");
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ɵb", function() { return DragDirective; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/common */ "./node_modules/@angular/common/fesm2015/common.js");
 
 
 
@@ -27,13 +27,13 @@ class NgxResizableService {
     constructor() { }
 }
 NgxResizableService.decorators = [
-    { type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"], args: [{
+    { type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Injectable"], args: [{
                 providedIn: 'root'
             },] }
 ];
 /** @nocollapse */
 NgxResizableService.ctorParameters = () => [];
-/** @nocollapse */ NgxResizableService.ngInjectableDef = Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["defineInjectable"])({ factory: function NgxResizableService_Factory() { return new NgxResizableService(); }, token: NgxResizableService, providedIn: "root" });
+/** @nocollapse */ NgxResizableService.ngInjectableDef = Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineInjectable"])({ factory: function NgxResizableService_Factory() { return new NgxResizableService(); }, token: NgxResizableService, providedIn: "root" });
 
 /**
  * @fileoverview added by tsickle
@@ -54,11 +54,11 @@ class NgxResizeableWindowRef {
     }
 }
 NgxResizeableWindowRef.decorators = [
-    { type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"], args: [{
+    { type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Injectable"], args: [{
                 providedIn: 'root'
             },] }
 ];
-/** @nocollapse */ NgxResizeableWindowRef.ngInjectableDef = Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["defineInjectable"])({ factory: function NgxResizeableWindowRef_Factory() { return new NgxResizeableWindowRef(); }, token: NgxResizeableWindowRef, providedIn: "root" });
+/** @nocollapse */ NgxResizeableWindowRef.ngInjectableDef = Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineInjectable"])({ factory: function NgxResizeableWindowRef_Factory() { return new NgxResizeableWindowRef(); }, token: NgxResizeableWindowRef, providedIn: "root" });
 
 /**
  * @fileoverview added by tsickle
@@ -76,9 +76,9 @@ class ResizableComponent {
         this.resizable = true;
         this.noTransition = false;
         this.rFlex = false;
-        this.resizeStart = new _angular_core__WEBPACK_IMPORTED_MODULE_1__["EventEmitter"]();
-        this.resizing = new _angular_core__WEBPACK_IMPORTED_MODULE_1__["EventEmitter"]();
-        this.resizeEnd = new _angular_core__WEBPACK_IMPORTED_MODULE_1__["EventEmitter"]();
+        this.resizeStart = new _angular_core__WEBPACK_IMPORTED_MODULE_0__["EventEmitter"]();
+        this.resizing = new _angular_core__WEBPACK_IMPORTED_MODULE_0__["EventEmitter"]();
+        this.resizeEnd = new _angular_core__WEBPACK_IMPORTED_MODULE_0__["EventEmitter"]();
         this.vx = 1;
         this.vy = 1;
         this.info = {};
@@ -190,30 +190,30 @@ class ResizableComponent {
     }
 }
 ResizableComponent.decorators = [
-    { type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"], args: [{
+    { type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"], args: [{
                 selector: 'rsz-layout',
                 template: "<ng-content></ng-content>\n\n<div *ngFor='let direction of directions'\n     [class]=\"'rg-' + direction\"\n     rszDragHandle\n     (DragStart)=\"dragStart($event, direction);\"\n     (DragEnd)=\"dragEnd($event)\"\n     (Drag)=\"dragging($event)\">\n    <span></span>\n</div>",
                 providers: [{ provide: 'Window', useValue: ɵ0 }],
-                encapsulation: _angular_core__WEBPACK_IMPORTED_MODULE_1__["ViewEncapsulation"].None,
-                styles: [".content{display:flex;flex-flow:column nowrap}.row{flex:1;display:flex;flex-flow:row nowrap}.row.resizable{flex:0 0 360px}.cell{box-sizing:border-box;background:#fff;border:4px solid #f0f0f0;flex:1;min-height:60px}.cell.resizable{flex:0 0 360px}.resizable{position:relative}.resizable.no-transition{transition:none!important}.rg-none{display:none}.rg-bottom,.rg-left,.rg-right,.rg-top{display:block;width:8px;height:8px;line-height:8px;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;background:0 0;position:absolute;z-index:1}.rg-bottom span,.rg-left span,.rg-right span,.rg-top span{position:absolute;box-sizing:border-box;display:block;border:1px solid #ccc}.rg-left span,.rg-right span{border-width:0 1px;top:50%;margin:-10px 0 0 2px;height:20px;width:4px}.rg-bottom span,.rg-top span{border-width:1px 0;left:50%;margin:2px 0 0 -10px;width:20px;height:4px}.rg-top{cursor:row-resize;width:100%;top:0;left:0;margin-top:-4px}.rg-right{cursor:col-resize;height:100%;right:0;top:0;margin-right:-8px}.rg-bottom{cursor:row-resize;width:100%;bottom:0;left:0;margin-bottom:-4px}.rg-left{cursor:col-resize;height:100%;left:0;top:0;margin-left:-8px}.content.cols{flex-flow:row nowrap}.content.cols .row{flex-flow:column nowrap}.content.cols .cell{min-width:60px}.content.cols .rg-top{margin-top:-8px}.content.cols .rg-right{margin-right:-4px}.content.cols .rg-bottom{margin-bottom:-8px}.content.cols .rg-left{margin-left:-4px}"]
+                encapsulation: _angular_core__WEBPACK_IMPORTED_MODULE_0__["ViewEncapsulation"].None,
+                styles: [".content{display:-webkit-box;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;flex-flow:column nowrap}.row{-webkit-box-flex:1;flex:1;display:-webkit-box;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;flex-flow:row nowrap}.row.resizable{-webkit-box-flex:0;flex:0 0 360px}.cell{box-sizing:border-box;background:#fff;border:4px solid #f0f0f0;-webkit-box-flex:1;flex:1;min-height:60px}.cell.resizable{-webkit-box-flex:0;flex:0 0 360px}.resizable{position:relative}.resizable.no-transition{-webkit-transition:none!important;transition:none!important}.rg-none{display:none}.rg-bottom,.rg-left,.rg-right,.rg-top{display:block;width:8px;height:8px;line-height:8px;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;background:0 0;position:absolute;z-index:1}.rg-bottom span,.rg-left span,.rg-right span,.rg-top span{position:absolute;box-sizing:border-box;display:block;border:1px solid #ccc}.rg-left span,.rg-right span{border-width:0 1px;top:50%;margin:-10px 0 0 2px;height:20px;width:4px}.rg-bottom span,.rg-top span{border-width:1px 0;left:50%;margin:2px 0 0 -10px;width:20px;height:4px}.rg-top{cursor:row-resize;width:100%;top:0;left:0;margin-top:-4px}.rg-right{cursor:col-resize;height:100%;right:0;top:0;margin-right:-8px}.rg-bottom{cursor:row-resize;width:100%;bottom:0;left:0;margin-bottom:-4px}.rg-left{cursor:col-resize;height:100%;left:0;top:0;margin-left:-8px}.content.cols{-webkit-box-orient:horizontal;-webkit-box-direction:normal;flex-flow:row nowrap}.content.cols .row{-webkit-box-orient:vertical;-webkit-box-direction:normal;flex-flow:column nowrap}.content.cols .cell{min-width:60px}.content.cols .rg-top{margin-top:-8px}.content.cols .rg-right{margin-right:-4px}.content.cols .rg-bottom{margin-bottom:-8px}.content.cols .rg-left{margin-left:-4px}"]
             }] }
 ];
 /** @nocollapse */
 ResizableComponent.ctorParameters = () => [
-    { type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["ElementRef"] },
+    { type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["ElementRef"] },
     { type: NgxResizeableWindowRef }
 ];
 ResizableComponent.propDecorators = {
-    resizable: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["HostBinding"], args: ['class.resizable',] }],
-    noTransition: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["HostBinding"], args: ['class.no-transition',] }],
-    width: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["HostBinding"], args: ['style.width',] }],
-    height: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["HostBinding"], args: ['style.height',] }],
-    flexBasis: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["HostBinding"], args: ['style.flex-basis',] }],
-    directions: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"] }],
-    rFlex: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"] }],
-    resizeStart: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Output"] }],
-    resizing: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Output"] }],
-    resizeEnd: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Output"] }]
+    resizable: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["HostBinding"], args: ['class.resizable',] }],
+    noTransition: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["HostBinding"], args: ['class.no-transition',] }],
+    width: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["HostBinding"], args: ['style.width',] }],
+    height: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["HostBinding"], args: ['style.height',] }],
+    flexBasis: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["HostBinding"], args: ['style.flex-basis',] }],
+    directions: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"] }],
+    rFlex: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"] }],
+    resizeStart: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Output"] }],
+    resizing: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Output"] }],
+    resizeEnd: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Output"] }]
 };
 
 /**
@@ -222,9 +222,9 @@ ResizableComponent.propDecorators = {
  */
 class DragDirective {
     constructor() {
-        this.DragStart = new _angular_core__WEBPACK_IMPORTED_MODULE_1__["EventEmitter"]();
-        this.Drag = new _angular_core__WEBPACK_IMPORTED_MODULE_1__["EventEmitter"]();
-        this.DragEnd = new _angular_core__WEBPACK_IMPORTED_MODULE_1__["EventEmitter"]();
+        this.DragStart = new _angular_core__WEBPACK_IMPORTED_MODULE_0__["EventEmitter"]();
+        this.Drag = new _angular_core__WEBPACK_IMPORTED_MODULE_0__["EventEmitter"]();
+        this.DragEnd = new _angular_core__WEBPACK_IMPORTED_MODULE_0__["EventEmitter"]();
         this.dragging = false;
     }
     /**
@@ -258,17 +258,17 @@ class DragDirective {
     }
 }
 DragDirective.decorators = [
-    { type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Directive"], args: [{
+    { type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Directive"], args: [{
                 selector: '[rszDragHandle]'
             },] }
 ];
 DragDirective.propDecorators = {
-    DragStart: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Output"] }],
-    Drag: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Output"] }],
-    DragEnd: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Output"] }],
-    onMousedown: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["HostListener"], args: ['mousedown', ['$event'],] }],
-    onMouseup: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["HostListener"], args: ['document:mouseup', ['$event'],] }],
-    onMousemove: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["HostListener"], args: ['document:mousemove', ['$event'],] }]
+    DragStart: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Output"] }],
+    Drag: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Output"] }],
+    DragEnd: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Output"] }],
+    onMousedown: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["HostListener"], args: ['mousedown', ['$event'],] }],
+    onMouseup: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["HostListener"], args: ['document:mouseup', ['$event'],] }],
+    onMousemove: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["HostListener"], args: ['document:mousemove', ['$event'],] }]
 };
 
 /**
@@ -278,9 +278,9 @@ DragDirective.propDecorators = {
 class NgxResizableModule {
 }
 NgxResizableModule.decorators = [
-    { type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["NgModule"], args: [{
+    { type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["NgModule"], args: [{
                 imports: [
-                    _angular_common__WEBPACK_IMPORTED_MODULE_0__["CommonModule"]
+                    _angular_common__WEBPACK_IMPORTED_MODULE_1__["CommonModule"]
                 ],
                 declarations: [
                     ResizableComponent,
@@ -293,19 +293,9 @@ NgxResizableModule.decorators = [
             },] }
 ];
 
-/**
- * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
- */
-
-/**
- * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
- */
-
-
 
 //# sourceMappingURL=3dgenomes-ngx-resizable.js.map
+
 
 /***/ }),
 
